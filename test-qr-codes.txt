@@ -1,0 +1,27 @@
+Test QR Codes for Treasure Hunt App
+
+Copy these codes to test the app:
+
+1. treasure-hunt-qr-1
+2. treasure-hunt-qr-2  
+3. treasure-hunt-qr-3
+4. treasure-hunt-qr-4
+5. treasure-hunt-qr-5
+
+How to test:
+1. Open the app at http://localhost:3000
+2. Click "Start Scanning"
+3. Instead of using camera, you can test by:
+   - Using another phone to display these codes as QR codes
+   - Or create actual QR codes using an online QR generator
+
+For quick testing without camera:
+1. Open browser developer tools (F12)
+2. Go to Console tab
+3. Type: localStorage.setItem('treasure-hunt-progress', JSON.stringify({
+     foundCodes: ['qr-1', 'qr-2', 'qr-3'],
+     totalCoins: 3,
+     canRedeemPrize: false,
+     isComplete: false
+   }))
+4. Refresh the page to see progress
